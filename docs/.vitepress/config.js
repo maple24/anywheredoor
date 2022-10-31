@@ -6,7 +6,7 @@ export default {
   description: "Just playing around", // meta data in html
   base: "/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
   outDir: "../public", // default
-  srcDir: "./src", // dir where markdown pages are store
+  srcDir: "", // dir where markdown pages are store
   head: [
     [
       "link",
@@ -18,10 +18,10 @@ export default {
 
   // Theme configs: Theme configs let you customize your theme.
   themeConfig: {
-    siteTitle: "My custom title",
-    logo: "/favicon.ico",
+    // siteTitle: "",
+    logo: "_assets/favicon.ico",
     nav: [
-      { text: "Guide", link: "/guide" },
+      { text: "Guide", link: "/guide/index" },
       {
         text: "Dropdown Menu",
         items: [
