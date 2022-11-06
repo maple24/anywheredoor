@@ -4,13 +4,17 @@ export default {
   title: "mBlog",
   titleTemplate: "anywhere door", // mBlog | anywhere door
   description: "Just playing around", // meta data in html
-  base: "/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
+  base: "/vitepress/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
   outDir: "../public", // default
   srcDir: "", // dir where markdown pages are store
   head: [
     [
       "link",
-      { rel: "shortcut icon", href: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "shortcut icon",
+        href: "assets/favicon.ico",
+        type: "image/x-icon",
+      },
     ],
   ],
   lastUpdated: true, // enable display the page's last updated time
@@ -19,9 +23,13 @@ export default {
   // Theme configs: Theme configs let you customize your theme.
   themeConfig: {
     // siteTitle: "",
-    logo: "_assets/favicon.ico",
+    logo: "assets/home/home-120.png",
     nav: [
       { text: "Guide", link: "/guide/index" },
+      { text: "Posts", link: "/posts/index" },
+      { text: "NBA", link: "/NBA/index" },
+      { text: "Life", link: "/life/index" },
+      { text: "Lab", link: "/lab/index" },
       {
         text: "Dropdown Menu",
         items: [
@@ -31,14 +39,42 @@ export default {
         ],
       },
     ],
-    sidebar: [
-      {
-        text: "Guide",
-        items: [
-          { text: "Introduction", link: "/introduction" },
-          { text: "Getting Started", link: "/getting-started" },
-        ],
-      },
-    ],
+    sidebar: {
+      // sidebar only shows in guide page
+      "/guide/": [
+        {
+          text: "Guide",
+          collapsible: true,
+          items: [
+            { text: "Introduction", link: "/introduction" },
+            { text: "Getting Started", link: "/getting-started" },
+          ],
+        },
+      ],
+      "/config/": [
+        {
+          text: "SectionB",
+          items: [
+            { text: "Introduction", link: "/introduction" },
+            { text: "Getting Started", link: "/getting-started" },
+          ],
+        },
+      ],
+      "/NBA/": [
+        {
+          text: "Story",
+          items: [{ text: "GSW", link: "/NBA/gws" }],
+        },
+      ],
+      "/posts/": [
+        {
+          text: "Posts",
+          items: [
+            { text: "one", link: "/posts/one" },
+            { text: "two", link: "/posts/two" },
+          ],
+        },
+      ],
+    },
   },
 };
