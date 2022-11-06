@@ -4,7 +4,7 @@ export default {
   title: "mBlog",
   titleTemplate: "anywhere door", // mBlog | anywhere door
   description: "Just playing around", // meta data in html
-  base: "/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
+  base: "/vitepress-blog/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
   outDir: "", // default
   srcDir: "", // dir where markdown pages are store
   head: [
