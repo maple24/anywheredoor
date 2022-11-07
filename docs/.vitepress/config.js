@@ -3,8 +3,8 @@ export default {
   lang: "en-US",
   title: "mBlog",
   titleTemplate: "anywhere door", // mBlog | anywhere door
-  description: "Just playing around", // meta data in html
-  base: "/vitepress-blog/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
+  description: "personal blog powered by vitepress", // meta data in html
+  base: "/anywheredoor/", // If you plan to deploy your site to https://foo.github.io/bar/, then you should set base to '/bar/'
   outDir: "", // default
   srcDir: "", // dir where markdown pages are store
   head: [
@@ -12,7 +12,7 @@ export default {
       "link",
       {
         rel: "shortcut icon",
-        href: "assets/favicon.ico",
+        href: "favicon.ico",
         type: "image/x-icon",
       },
     ],
@@ -23,7 +23,7 @@ export default {
   // Theme configs: Theme configs let you customize your theme.
   themeConfig: {
     // siteTitle: "",
-    logo: "assets/home/home-120.png",
+    logo: "icons8-home.svg",
     nav: [
       { text: "Guide", link: "/guide/index" },
       { text: "Posts", link: "/posts/index" },
