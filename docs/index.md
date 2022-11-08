@@ -4,17 +4,6 @@ editLink: true
 layout: page
 ---
 
-<!--
-# Hello VitePress
-
-Title from fontmatter: {{ $frontmatter.title }}
-
-<myaudio />
-
-<script setup>
-import myaudio from '../src/components/audio.vue'
-</script> -->
-
 # Hello World {.text-3xl .font-bold .underline}
 
 <div class="my-8 max-w-xs rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">

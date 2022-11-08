@@ -14,6 +14,6 @@
 
 <script setup>
 import { useData } from 'vitepress'
-import myButton from '../../components/button.vue'
+import myButton from '../src/components/button.vue'
 const { page } = useData()
 </script>
