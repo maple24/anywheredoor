@@ -63,7 +63,9 @@ export default {
       "/NBA/": [
         {
           text: "Story",
-          items: [{ text: "GSW", link: "/NBA/gws" }],
+          items: [
+            { text: "KobeBryant_FINALGAME", link: "/NBA/KobeBryant_FINALGAME" },
+          ],
         },
       ],
       "/posts/": [
