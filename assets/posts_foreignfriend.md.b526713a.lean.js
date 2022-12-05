@@ -1,0 +1,1 @@
+import{_ as e,o as p,c as t,f as o}from"./app.6b41955c.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"posts/foreignfriend.md","lastUpdated":1670210692000}'),s={name:"posts/foreignfriend.md"},_=o("",13),a=[_];function n(r,c,i,d,f,l){return p(),t("div",null,a)}const T=e(s,[["render",n]]);export{h as __pageData,T as default};
