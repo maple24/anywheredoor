@@ -74,6 +74,8 @@ export default {
           items: [
             { text: "one", link: "/posts/one" },
             { text: "two", link: "/posts/two" },
+            { text: "2022.11.29", link: "/posts/2022.11.29" },
+            { text: "foreignfriend", link: "/posts/foreignfriend" },
           ],
         },
       ],
